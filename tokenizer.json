@@ -1,0 +1,10 @@
+{
+    "marketten" :0,
+    "bir":1,
+    "litre":2,
+    "süt":3,
+    "aldı":4,
+    "Türkiyenin":5,
+    "başkenti":6,
+    "<unk>":7
+    }
