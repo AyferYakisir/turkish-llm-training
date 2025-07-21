@@ -1,15 +1,9 @@
 text = "Türkiyenin başkenti"
 text1= "marketten bir litre süt aldı"
-vocab ={
-    "marketten" :0,
-    "bir":1,
-    "litre":2,
-    "süt":3,
-    "aldı":4,
-    "Türkiyenin":5,
-    "başkenti":6,
-    "<unk>":7
-    }
+import json
+
+with open("tokenizer.json","r") as f:
+    vocab = json.load(f)
 
 def tokenize(text):
     parts = text.split()
