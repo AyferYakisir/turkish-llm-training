@@ -22,6 +22,8 @@ Bu proje, **sıfırdan Türkçe bir LLM (Large Language Model)** geliştirme sü
 | `tokenKodlama_basic.py`   | Boşluklara göre basit tokenizasyon                                      |
 | `sozlukleTokenize.py`     | Ön tanımlı bir sözlük ile kelimeleri ID’lere çeviren tokenizer          |
 | `idTokenize.py`           | Token ID’lerini tekrar metne çeviren (detokenization) fonksiyonu        |
+| `gpt2_tokenize.py`        | GPT-2 modelinin tokenizer’ı (tiktoken) ile örnek tokenizasyon ve çözümleme |
+
 
 
 
