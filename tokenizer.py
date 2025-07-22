@@ -35,7 +35,7 @@ class Tokenizer:
  
 tokenizer = Tokenizer("tokenizer.json")
 
-text = "kelebekler çiçekler"
+text = "Dağlar uzaklarda heybet"
 ids = tokenizer.encode(text)
 print(ids)  
 
