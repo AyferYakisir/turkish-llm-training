@@ -41,3 +41,10 @@ print(ids)
 
 decoded = tokenizer.decode(ids)
 print(decoded) 
+
+with open("text.txt","r") as f:
+    text = f.read()
+text
+
+tokens=tokenizer.encode(text)
+print(tokens)
