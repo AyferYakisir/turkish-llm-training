@@ -1,5 +1,5 @@
 text = "Türkiyenin başkenti"
-text1= "marketten bir litre süt aldı"
+text1= "kelebekler çiçekler arasında uçuşuyor"
 import json
 
 with open("tokenizer.json","r") as f:
