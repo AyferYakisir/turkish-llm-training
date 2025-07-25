@@ -3,7 +3,7 @@ from contextLength import context_length
 from positional_embedding import meanings
 
 def get_rotary_position_encoding(input: torch.Tensor, base=10000, device="cpu"):
-  context_length, dimension = input.shape
+  batch_size, context_length, dimension = input.shape
 
   assert dimension % 2 == 0, "dimension must be even"
 
