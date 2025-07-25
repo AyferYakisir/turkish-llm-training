@@ -26,6 +26,11 @@ class Tokenizer:
         
         tokens.pop()
         return tokens
+    
+
+    def tokenize(self,text):
+        token_ids= self.encode(text)
+        return [self.reverse_vocab[id] for id in token_ids]
 
     def decode(self, ids):
         text = ""
