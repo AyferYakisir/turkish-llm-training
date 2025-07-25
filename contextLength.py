@@ -7,7 +7,7 @@ output = " hava taze ve ferah."
 data = "Gökyüzünde bulutlar <pad> <pad> "
 hedef = "hava taze <pad> <pad> "
  
-context_length = 7
+context_length = 20
 
 
 tokenizer = Tokenizer("tokenizer.json")
