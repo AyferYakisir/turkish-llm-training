@@ -34,14 +34,22 @@ class MasterModel(nn.Module):
     self.embedding = nn.Embedding(vocab_size, embedding_dim)
     self.pos_embedding = nn.Embedding(context_length, embedding_dim)
     self.get_pos = get_rotary_position_encoding
-
+ 
   def forward(self, x):
-    x = x.to(next(self.parameters()).device)  # Modelin cihazına al (CPU/GPU fark etmez)
+
+    if isinstance(x, list):
+        x = torch.tensor(x, dtype=torch.long).unsqueeze(0)  
+
+    elif isinstance(x, torch.Tensor) and x.dim() == 1:
+        x = x.unsqueeze(0)
+
+    x = x.to(next(self.parameters()).device)
 
     x = self.embedding(x)
     x = self.get_pos(x)
 
     return x
+
 
 
     
